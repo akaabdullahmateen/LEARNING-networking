@@ -5,7 +5,8 @@
 #include <stdio.h>
 
 // We can study the internal states of the registers through the GNU Debugger, GDB: gdb -q ./a.out
-// This assumes that the executable is named a.out, however, it can be named anything during compilation: gcc firstprog.c -o something.out/bin/<null> 
+// This assumes that the executable is named a.out, however, it can be named anything during compilation: gcc firstprog.c -o something.out/bin/<null>
+// Also note that the -q flag is optional, and is used to prevent GDB from printing version string and other irrelevant information
 int main(){
   int i;
   for(i = 0; i < 10; i++){
