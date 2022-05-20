@@ -4,18 +4,18 @@
 using namespace std;
 
 int main(){
-	double hours, rate, pay;
+	double months, rate, pay;
 
 	// Get the number of hours worked
-	cout << "How many hours did you work? ";
-	cin >> hours;
+	cout << "How many months did you work? ";
+	cin >> months;
 
 	// Get the hourly pay rate
 	cout << "How much do you get paid per hour? ";
 	cin >> rate;
 
 	// Calculate the pay
-	pay = hours * rate;
+	pay = rate * 40 * 4 * months;
 
 	// Display the pay
 	cout << "You have earned $" << pay << endl;
