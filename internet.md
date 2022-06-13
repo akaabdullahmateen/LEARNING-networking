@@ -68,3 +68,9 @@ A text-based protocol or plain text protocol represents its content in human-rea
 
 Network applications have various methods of encapsulating data. One method very common with internet protocols is a text oriented representation that transmits requests and responses as lines of ASCII text, terminated by a newline character (and usually a carriage return character). Examples of protocols that use plain, human-readbale text for its commands are File Transfer Protocol (FTP), Simple Mail Transfer Protocol (SMTP), and the finger protocol.
 
+Text-based protocols are typically optimized for human parsing and interpretation, and are therefore suitable whenever human inspection of protocol contents is required, such as during debugging and during early protocol development design phases. To be clear, all digital communication is fundamentally binary. The "text" based protocols mentioned here use only binary content, which is made "human readable" by a text editor (or other such software).
+
+### Binary protocol
+
+A binary protocol utilizes all values of a byte, as opposed to a text-based approach which only uses values corresponding to human-readable characters in ASCII encoding. Binary protocols are intended to be read by a machine, rather than a human. Binary protocols have the advantage of terseness, which translates into speed of transmission and interpretation. Binary have been used in the normative documents describing modern standards like EbXML, HTTP/2, HTTP/3, and EDOC. An interface in UML may also be considered a binary protocol.
+
