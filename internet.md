@@ -47,3 +47,24 @@ Often frames of several different sizes are nested inside each other. For exampl
 ## Network protocols
 
 A protocol defines the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event. A communication protocol is a system of rules that allows two or more entities in a communication system to transmit information via any kind of variation of a physical quantity. The protocol defines the rules, syntax, semantics, and synchronization of communication and possible error recovery methods. Protocols may be implemented by hardware, software, or a combination of both. Multiple protocols often describe different aspects of a single communication. A group of protocols designed to work together is called a protocol suite; when implemented in software, they are a protocol stack.
+
+Operating systems usually contains a set of cooperating processes that manipulate shared data to communicate with each other. This communication is governed by well-understood protocols, which can be embedded in the process code itself. In contrast, because there is no shared memory, communication systems have to communicate with each other using a shared transmission medium. Transmission is not necessarily reliable, and individual systems may use different hardware or operating systems.
+
+To implement a networking protocol, the protocol software modules are interfaced with a framework implemented on the machine's operating system. This framework implements the networking functionality of the operating system. When protocol algorithms are expressed in a portable programming language and the protocol software may be made operating system independent. The best known frameworks are the TCP/IP model and the OSI model.
+
+At the time the internet was developed, abstraction layering had proven to be a successful design approach for both compilers and operating system design and, given the similarities between programming languages and communication protocols, the originally monolothic networking prorgrams were decomposed into cooperating protocols. This gave rise to the concept of layered protocols which nowadays forms the basis of protocol design.
+
+Systems typically do not use a single protocol to handle a transmission. Instead they use a set of cooperating protocols, sometimes called a protocol suite. Some of the best known protocol suites are TCP/IP, IPX/SPX, AX.25, and AppleTalk.
+
+The protocols can be arranged based on functionality in groups, for instance, there is a group of transport protocols. The functionalities are mapped onto the layers, each layer solving a distinct class of problems relating to, for instance: application-, transport-, internet-, and network interface-functions. To transmit a message, a protocol has to be selected from each layer. The selection of the next protocol is accomplished by extending the message with a protocol selector for each layer.
+
+## Types of protocols
+
+There are two types of communication protocols, based on their representation of the content being carried: text-based and binary.
+
+### Text-based protocol
+
+A text-based protocol or plain text protocol represents its content in human-readable format, often in plain text. The immediate human readability stands in contrast to binary protocols which have inherent benefits for use in a computer environment (such as ease of mechanical parsing and improved bandwidth utilization).
+
+Network applications have various methods of encapsulating data. One method very common with internet protocols is a text oriented representation that transmits requests and responses as lines of ASCII text, terminated by a newline character (and usually a carriage return character). Examples of protocols that use plain, human-readbale text for its commands are File Transfer Protocol (FTP), Simple Mail Transfer Protocol (SMTP), and the finger protocol.
+
