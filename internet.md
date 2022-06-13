@@ -36,3 +36,10 @@ In comparison, several networking models have sought to create an intellectual f
 | Data link    | Frame                  | Transmission of data frames between two nodes connected by a physical layer |
 | Physical     | Bit, Symbol            | Transmission and reception of raw bit streams over a physical medium |
 
+## Frame
+
+A frame is a digital data transmission unit in computer networking and telecommunication. In packet switched systems, a frame is a simple container for a single network packet. In other telecommunication systems, a frame is a repeating structure supporting time-division multiplexing. A frame typically includes frame synchronization features consisting of a sequence of bits or symbols that indicate to the receiver the beginning and end of the payload data within the stream of symbols or bits it receives. If a receiver is connected to the system during the frame transmission, it ignores the data until it detects a new frame synchronization sequence.
+
+In the OSI model of computer networking, a frame is the protocol data unit at the data link layer. Frames are the result of the final layer of encapsulation before the data is transmitted over the physical layer. A frame is "the unit of transmission in a link layer protocol, and consists of a link layer header followed by a packet". Each frame is separated from the next by an interframe gap. A frame is a series of bits generally composed of frame synchronization bits, the packet payload, and a frame check sequence. Examples are Ethernet frames, Point-to-Point Protocol (PPP) frames, Fibre Channel frames, and V.42 modem frames.
+
+Often frames of several different sizes are nested inside each other. For example, when using Point-to-Point Protocol (PPP) over asynchronuous serial communication, the eight bits of each individual byte are framed by start and stop bits, the payload data bytes in a network packet are framed by the header and footer, and several packets can be framed with frame boundary octets.
