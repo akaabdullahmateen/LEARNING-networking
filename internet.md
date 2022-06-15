@@ -45,7 +45,7 @@ The internet standards describe a framework known as the Internet Protocol suite
 
 Below this top layer, the **transport layer** connects applications on different hosts with a logical channel through the network. It provides this service with a variety of possible characteristics, such as **ordered, reliable delivery (TCP)**, and an **unreliable datagram service (UDP)**.
 
-Underlying these layers are the networking technologies that interconnect networks at their borders and exchange traffic across them. The internet layer implements the **Internet Protocol** (IP) which enables computers to identify and locate each other by **IP address**, and route their traffic via intermediate (transit) networks. The Internet Protocol layer code is independent of the type of network that it is physically running over.
+Underlying these layers are the networking technologies that interconnect networks at their borders and exchange traffic across them. The **internet layer** implements the **Internet Protocol** (IP) which enables computers to identify and locate each other by **IP address**, and route their traffic via intermediate (transit) networks. The Internet Protocol layer code is independent of the type of network that it is physically running over.
 
 At the bottom of the architecture is the **link layer**, which connects nodes on the same physical link, and contains protocols that do not require routers for traversal to other links. The protocol suite does not explicitly specify hardware methods to transfer bits, or protocols to manage such hardware, but assumes that appropriate technology is available. Examples of that technology include Wi-Fi, Ethernet, and DSL.
 
@@ -59,7 +59,7 @@ The most prominent component of the internet model is the Internet Protocol (IP)
 
 For locating individual computers on the network, the internet provides IP addresses. IP addresses are used by the internet infrastructure to direct internet packets to their destinations. They consist of fixed-length numbers, which are found within the packet. IP addresses are generally assigned to equipment either automatically via **DHCP**, or are configured.
 
-However, the network also supports other addressing systems. Users generally enter domain names (e.g. "[en.wikipedia.org](en.wikipedia.org)" instead of IP addresses because they are easier to remember, they are converted by the **Domain Name System** (DNS) into IP addresses which are more efficient for routing purposes.
+However, the network also supports other addressing systems. Users generally enter domain names, for example, [en.wikipedia.org](en.wikipedia.org), instead of IP addresses because they are easier to remember, they are converted by the Domain Name System (DNS) into IP addresses which are more efficient for routing purposes.
 
 
 #### IPv4
