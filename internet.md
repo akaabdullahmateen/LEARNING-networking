@@ -64,7 +64,7 @@ However, the network also supports other addressing systems. Users generally ent
 
 #### IPv4
 
-Internet Protocol version 4 (IPv4) defines an IP address as a **32 bit number**. IPv4 is the initial version used on the first generation of the internet and is still in dominant use. It s designed to address up to ≈ 4.3 billion hosts. However, the explosive growth of the Internet has led to IPv4 address exhaustion, which entered its final stage in 2011, when the global IPv4 address allocation pool was exhausted.
+Internet Protocol version 4 (IPv4) defines an IP address as a **32 bit number**. IPv4 is the initial version used on the first generation of the internet and is still in dominant use. It was designed to address up to ≈ 4.3 billion hosts. However, the explosive growth of the Internet has led to IPv4 address exhaustion, which entered its final stage in 2011, when the global IPv4 address allocation pool was exhausted.
 
 
 #### IPv6
