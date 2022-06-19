@@ -1,6 +1,9 @@
 import os
 import subprocess
 import re
+import platform
+import math
+import shutil
 
 if __name__ == "__main__":
 
@@ -127,11 +130,58 @@ if __name__ == "__main__":
 		wifi_bssid        = "NONE"
 		wifi_subnet_mask  = "NONE"
 	
+	# Find system device name
+	sys_device_name = os.uname().nodename
+
+	# Find system total physical memory
+	with open("/proc/meminfo") as file:
+		for line in file:
+			if "MemTotal" in line:
+				sys_memory = str(format(float(math.ceil(int(line.split()[1].split()[0])/(10**6))), ".2f")) + " GB" 
+				break		
+		file.close()
+
+	# Find system processor model name
+	cmd = "lscpu"
+	process = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
+	output, error = process.communicate()
+	tokens = output.decode("utf-8").split("\n")
+	for token in tokens:
+		if "Model name:" in token:
+			sys_processor = " ".join(token.split()[2:])
+			break
+
+	# Find system primary disk total capacity
+	sys_disk_capacity = str(math.ceil(shutil.disk_usage("/")[0]/(10**9))) + " GB"
+	
+	# Find system operating system name
+	cmd = "lsb_release -a"
+	process = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
+	output, error = process.communicate()
+	tokens = output.decode("utf-8").split("\n")
+	for token in tokens:
+		if "Description:" in token:
+			sys_os_name = " ".join(token.split()[1:])
+			break
+
+	# Find system operating system architecture
+	sys_os_type = "64-bit" if os.uname().machine == "x86_64" else "32-bit" if os.uname().macine == "x86" else "NONE"
+
 	print("")
 	print("Linux IP Configuration v1.0-beta")
-	print("Copyright © Yahya Mateen 2022")
+	print("Copyright (C) 2022 Yahya Mateen")
 	print("Licensed under GNU-GPLv3")
 	
+	print("")
+	print("System information")
+	print("")
+	print(f"\tDevice Name .................... : {sys_device_name}")
+	print(f"\tMemory ......................... : {sys_memory}")
+	print(f"\tProcessor ...................... : {sys_processor}")
+	print(f"\tDisk Capacity .................. : {sys_disk_capacity}")
+	print(f"\tOS Name ........................ : {sys_os_name}")
+	print(f"\tOS Type ........................ : {sys_os_type}")
+
 	print("")
 	print("Ethernet adapter Local Area Connection:")
 	print("")
