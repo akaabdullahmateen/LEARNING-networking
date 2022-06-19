@@ -165,7 +165,7 @@ if __name__ == "__main__":
 			break
 
 	# Find system operating system architecture
-	sys_os_type = "64-bit" if os.uname().machine == "x86_64" else "32-bit" if os.uname().macine == "x86" else "NONE"
+	sys_os_type = "64-bit" if os.uname().machine == "x86_64" else "32-bit" if os.uname().machine == "x86" else "NONE"
 
 	print("")
 	print("Linux IP Configuration v1.0-beta")
