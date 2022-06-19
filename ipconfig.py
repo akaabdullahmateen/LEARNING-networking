@@ -42,7 +42,7 @@ if __name__ == "__main__":
 	else:
 		eth_device_name = "NONE"
 		eth_mac_address = "NONE"
-		eth_media_state = "Media disconnected"
+		eth_media_state = "NONE"
 
 	if wifi_exists:
 		# Find MAC address of Wi-Fi device
@@ -64,7 +64,7 @@ if __name__ == "__main__":
 	else:
 		wifi_device_name = "NONE"
 		wifi_mac_address = "NONE"
-		wifi_media_state = "Media disconnected"
+		wifi_media_state = "NONE"
 
 	if eth_media_state == "Media connected":
 		# Find IPv6 address of ethernet device
