@@ -10,6 +10,7 @@ private:
 	bool is_octets_valid(const std::string &ipv4_address);
 	std::size_t get_dot_count(const std::string &ipv4_address);
 	bool is_length_valid(const std::string &ipv4_address);
+	bool is_characters_dot_or_digit(const std::string &ipv4_address);
 	bool is_address_valid(const std::string &ipv4_address);
 
 public:

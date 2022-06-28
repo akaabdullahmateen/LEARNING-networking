@@ -79,8 +79,18 @@ bool Classful_network::is_length_valid(const std::string &ipv4_address){
 	return true;
 }
 
+bool Classful_network::is_characters_dot_or_digit(const std::string &ipv4_address){
+	const char dot = '.';
+	for(const char c : ipv4_address){
+		if(!(std::isdigit(c) || c == '.')){
+			return false;
+		}
+	}
+	return true;
+}
+
 bool Classful_network::is_address_valid(const std::string &ipv4_address){
-	return (is_length_valid(ipv4_address) && (get_dot_count(ipv4_address) == 3) && is_octets_valid(ipv4_address));
+	return (is_length_valid(ipv4_address) && is_characters_dot_or_digit(ipv4_address) && (get_dot_count(ipv4_address) == 3) && is_octets_valid(ipv4_address));
 }
 
 std::string Classful_network::get_address_class(){
