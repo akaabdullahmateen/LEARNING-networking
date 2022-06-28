@@ -1,0 +1,139 @@
+# Internet
+
+The internet is the global system of interconneted **computer networks** that uses the **Internet Protocol suite (TCP/IP)** to communicate between networks and devices. It is a network of networks that consists of private, public, academic, business, and government networks of local to global scope, linked by a broad array of electronic, wireless, and optical networking technologies. The internet carries a vast range of information resources and services, such as the inter-linked hypertext documents and applications of the World Wide Web (WWW), electronic mail. telephony, and file sharing.
+
+The origins of the internet date back to the development of **packet switching** and research commisioned by the United States Department of Defense in the 1960s to enable time-sharing of computers. The primary precursor network, the APRANET, initially served as a backbone for interconnection of regional academic and military networks in the 1970s. The funding of the National Science Foundation Network as a new backbone in 1980s, as well as private funding for other commercial extensions, led to worldwide participation in the development of new networking technologies, and the merger of many networks. The linking of commercial networks and enterprises by the early 1990s marked the beginning of the transition to the modern internet, and generated a sustained exponential growth as generations of institutional, personal, and mobile computers were connected to the network. Although the internet was widely used by academia in the 1980s, commercialization incorporated its services and technologies into virtually every aspect of modern life.
+
+Most traditional communication media, including telephony, radio, television, paper mail, and newspapers are reshaped, or even bypassed by the internet, giving birth to new services such as email, internet telephony, internet television, online music, digital newspapers, and video streaming websites. Newspaper, book, and print publishing are adapting to website technology, or are reshaped into blogging, web feeds, and online news aggregrators. The internet has enabled and accelerated new forms of personal interactions through instant messaging, internet forums, and social networking services. Online shopping has grown exponentially for major retailers, small businesses, and entrepreneurs, as it enabled firms to extend their "brick and mortal" presence to serve a larger market or even sell goods and services entirely online. Business-to-business and financial services on the internet affect supply chains across entire industries.
+
+The internet has **no centralized governance** in either technological implementation or policies for access and usage; each constituent network sets its own policies. The overreaching definitions of the two principal name spaces in the internet, the **Internet Protocol address** (IP address) space and the **Domain Name System (DNS)**, are directed by a maintainer organization, the Internet Corporation for Assigned Names and Numbers (ICANN). The technical underpinning and standardization of the core protocols is an activity of the Internet Engineering Task Force (IETF), a non-profit organization of loosely affiliated international participants that anyone may associate with by contributing technical expertise.
+
+
+
+
+## Infrastruture
+
+The communications infrastructure of the internet consists of its **hardware components** and a system of **software layers** that control various aspects of the architecture. As with any computer network, the internet physically consists of routers, media (such as cabling and radio links), repeaters, modems etc. However, as an example of internetworking, many of the network nodes are not necessarily internet equipment per se, the internet packets are carried by other full-fledged networking protocols with the internet acting as a homogeneous networking standard, running across heterogeneous hardware, with the packets guided to their destinations by IP routers.
+
+
+### Service tiers
+
+**Internet Service Providers** (ISPs) establish the worldwide connectivity between individual networks at various levels of scope. End-users who only access the internet when needed to perform a function or obtain information, represent the bottom of the routing hierarchy. At the top of the routing hierarchy are the tier 1 networks, large telecommunication companies that exchange traffic directly with each other via very high speed fibre optic cables and governed by peering agreements. Tier 2 and lower-level networks buy Internet transit from other providers to reach at least some parties on the global Internet, though they may also engage in peering. An ISP may use a single upstream provider for connectivity, or implement multihoming to achieve redundancy and load balancing. Internet exchange points are major traffic exchanges with physical connections to multiple ISPs. Large organizations, such as academic institutions, large enterprises, and governments, may perform the same function as ISPs, engaging in peering and purchasing transit on behalf of their internal networks. Research networks tend to interconnect with large subnetworks such as GEANT, GLORIAD, Internet2, and the UK's national research and education network, JANET.
+
+
+### Access
+
+Common methods of internet access by users include **dial-up** with a computer modem via **telephone** circuits, **broadband** over coaxial cable, fiber optics or copper wires, **Wi-Fi**, **satellite**, and **cellular telephone technology** (e.g. 3G, 4G). The internet may often be accessed from computers in libraries and internet cafes. Internet access points exist in many public places such as airport halls and coffee shops. Various terms are used, such as public internet kiosk, public access terminal, and web payphone. Many hotels also have public terminals that are usually fee-based. These terminals are widely accessed for various usages, such as ticket booking, bank deposit, or online payment. Wi-Fi provides wireless access to the internet via local computer networks. Hotspots providing such access include Wi-Fi cafes, where users need to bring their own wireless devices such as a laptop or PDA. These services may be free to all, free to customers only, or fee-based.
+
+Grassroots efforts have led to wireless community networks. Commercial Wi-Fi services that cover large areas are available in many cities, such as New York, London, Vienna, Toronto, San Francisco, Philadelphia, Chicago and Pittsburgh, where the internet can then be accessed from places such as a park bench. Experiments have also been conducted with proprietary mobile wireless networks like Ricochet, various high-speed data services over cellular networks, and fixed wireless services. Modern smartphones can also access the internet through the cellular carrier network. For web browsing, these devices provide applications such as Google Chrome, Safari, and Firefox and a wide variety of other internet software may be installed from app stores. Internet usage by mobile and tablet devices exceeded desktop worldwide for the first time in October 2016.
+
+
+#### Mobile communication
+
+The International Telecommunication Union (ITU) estimated that, by the end of 2017, 48% of individual users regularly connect to the internet, up from 34% in 2012. Mobile internet connectivity has played an important role in expanding access in recent years especially in Asia and the Pacific and in Africa. The number of unique mobile cellular subscriptions increased from 3.89 billion in 2012 to 4.83 billion in 2016, two-thirds of the world's population, with more than half of subscriptions located in Asia and the Pacific. The number of subscriptions is predicted to rise to 5.69 billion users in 2020. As of 2016, almost 60% of the world's population had access to a 4G broadband cellular network, up from almost 50% in 2015 and 11% in 2012. The limits that users face on accessing information via mobile applications coincide with a broader process of **fragmentation of the internet**. Fragmentation restricts access to media content and tends to affect poorest users the most.
+
+**Zero-rating**, the practice of internet service providers allowing users free connectivity to access specific content or applications without cost, has offered opportunities to surmount economic hurdles, but has also been accused by its critics as creating a two-tiered internet. To address the issues with zero-rating, an alternative model has emerged in the concept of 'equal rating' and is being tested in experiments by Mozilla and Orange in Africa. Equal rating prevents prioritization of one type of content and zero-rates all content up to a specified data cap. A study published by Chatham House, 15 out of 19 countries researched in Latin America had some kind of hybrid or zero-rated product offered. Some countries in the region had a handful of plans to choose from (across all mobile network operators) while others, such as Colombia, offered as many as 30 pre-paid and 34 post-paid plans.
+
+A study of eight countries in the Global South found that zero-rated data plans exist in every country, although there is a great range in the frequency with which they are offered and actually used in each. The study looked at the top three to five carriers by market share in Bangladesh, Colombia, Ghana, India, Kenya, Nigeria, Peru and Philippines. Across the 181 plans examined, 13 per cent were offering zero-rated services. Another study, covering Ghana, Kenya, Nigeria and South Africa, found Facebook's Free Basics and Wikipedia Zero to be the most commonly zero-rated content.
+
+
+
+
+## Internet Protocol suite
+
+The internet standards describe a framework known as the Internet Protocol suite (also called TCP/IP, based on the first two components). This is a suite of protocols that are ordered into a set of **four conceptional layers** by the scope of their operation, originally documented in **RFC 1122** and **RFC 1123**. At the top is the **application layer**, where communication is described in terms of the objects or data structures most appropriate for each application. For example, a web browser operates in a client–server application model and exchanges information with the Hypertext Transfer Protocol (HTTP) and an application-germane data structure, such as the Hypertext Markup Language (HTML).
+
+Below this top layer, the **transport layer** connects applications on different hosts with a logical channel through the network. It provides this service with a variety of possible characteristics, such as **ordered, reliable delivery (TCP)**, and an **unreliable datagram service (UDP)**.
+
+Underlying these layers are the networking technologies that interconnect networks at their borders and exchange traffic across them. The **internet layer** implements the **Internet Protocol** (IP) which enables computers to identify and locate each other by **IP address**, and route their traffic via intermediate (transit) networks. The Internet Protocol layer code is independent of the type of network that it is physically running over.
+
+At the bottom of the architecture is the **link layer**, which connects nodes on the same physical link, and contains protocols that do not require routers for traversal to other links. The protocol suite does not explicitly specify hardware methods to transfer bits, or protocols to manage such hardware, but assumes that appropriate technology is available. Examples of that technology include Wi-Fi, Ethernet, and DSL.
+
+
+### Internet Protocol
+
+The most prominent component of the internet model is the Internet Protocol (IP). IP enables internetworking and, in essence, establishes the internet itself. Two versions of the Internet Protocol exist, **IPv4** and **IPv6**.
+
+
+#### IP Addresses
+
+For locating individual computers on the network, the internet provides IP addresses. IP addresses are used by the internet infrastructure to direct internet packets to their destinations. They consist of fixed-length numbers, which are found within the packet. IP addresses are generally assigned to equipment either automatically via **DHCP**, or are configured.
+
+However, the network also supports other addressing systems. Users generally enter domain names, for example, [en.wikipedia.org](en.wikipedia.org), instead of IP addresses because they are easier to remember, they are converted by the Domain Name System (DNS) into IP addresses which are more efficient for routing purposes.
+
+
+#### IPv4
+
+Internet Protocol version 4 (IPv4) defines an IP address as a **32 bit number**. IPv4 is the initial version used on the first generation of the internet and is still in dominant use. It was designed to address up to ≈ 4.3 billion hosts. However, the explosive growth of the Internet has led to IPv4 address exhaustion, which entered its final stage in 2011, when the global IPv4 address allocation pool was exhausted.
+
+
+#### IPv6
+
+Because of the growth of the internet and the depletion of available IPv4 addresses, a new version of IP, IPv6, was developed in the mid-1990s, which provides vastly larger addressing capabilities and more efficient routing of Internet traffic. IPv6 uses **128 bits** for the IP address and was standardized in 1998. IPv6 deployment has been ongoing since the mid-2000s and is currently in growing deployment around the world, since internet address registries (RIRs) began to urge all resource managers to plan rapid adoption and conversion.
+
+IPv6 is not directly interoperable by design with IPv4. In essence, it establishes a parallel version of the Internet not directly accessible with IPv4 software. Thus, translation facilities must exist for internetworking or nodes must have duplicate networking software for both networks. Essentially all modern computer operating systems support both versions of the Internet Protocol. Network infrastructure, however, has been lagging in this development. Aside from the complex array of physical connections that make up its infrastructure, the internet is facilitated by bi- or multi-lateral commercial contracts, e.g., peering agreements, and by technical specifications or protocols that describe the exchange of data over the network. Indeed, the internet is defined by its interconnections and routing policies.
+
+
+#### Subnetwork
+
+A subnetwork or subnet is a **logical subdivision** of an IP network. The practice of dividing a network into two or more networks is called subnetting.
+
+Computers that belong to a subnet are addressed with an identical most-significant bit-group in their IP addresses. This results in the logical division of an IP address into two fields, the network number or routing prefix and the rest field or host identifier. The rest field is an identifier for a specific host or network interface.
+
+The routing prefix may be expressed in **Classless Inter-Domain Routing** (CIDR) notation written as the first address of a network, followed by a slash character (/), and ending with the bit-length of the prefix. For example, 198.51.100.0/24 is the prefix of the Internet Protocol version 4 network starting at the given address, having 24 bits allocated for the network prefix, and the remaining 8 bits reserved for host addressing. Addresses in the range 198.51.100.0 to 198.51.100.255 belong to this network. The IPv6 address specification 2001:db8::/32 is a large address block with 296 addresses, having a 32-bit routing prefix.
+
+For IPv4, a network may also be characterized by its **subnet mask** or netmask, which is the bitmask that when applied by a bitwise AND operation to any IP address in the network, yields the routing prefix. Subnet masks are also expressed in dot-decimal notation like an address. For example, 255.255.255.0 is the subnet mask for the prefix 198.51.100.0/24.
+
+Traffic is exchanged between subnetworks through routers when the routing prefixes of the source address and the destination address differ. A router serves as a logical or physical boundary between the subnets.
+
+The benefits of subnetting an existing network vary with each deployment scenario. In the address allocation architecture of the internet using CIDR and in large organizations, it is necessary to allocate address space efficiently. Subnetting may also enhance routing efficiency, or have advantages in network management when subnetworks are administratively controlled by different entities in a larger organization. Subnets may be arranged logically in a hierarchical architecture, partitioning an organization's network address space into a tree-like routing structure.
+
+
+#### Routing
+
+Computers and routers use **routing tables** in their operating system to direct IP packets to reach a node on a different subnetwork. Routing tables are maintained by manual configuration or automatically by routing protocols. End-nodes typically use a default route that points toward an ISP providing transit, while ISP routers use the **Border Gateway Protocol** to establish the most efficient routing across the complex connections of the global internet. The default gateway is the node that serves as the forwarding host (router) to other networks when no other route specification matches the destination IP address of a packet.
+
+
+#### IETF
+
+While the hardware components in the internet infrastructure can often be used to support other software systems, it is the design and the standardization process of the software that characterizes the internet and provides the foundation for its scalability and success. The responsibility for the architectural design of the internet software systems has been assumed by the Internet Engineering Task Force (IETF). The IETF conducts standard setting work groups, open to any individual, about the various aspects of internet architecture. The resulting contributions and standards are published as Request for Comments (RFC) documents on the IETF web site. The principal methods of networking that enable the internet are contained in specially designated RFCs that constitute the internet standards. Other less rigorous documents are simply informative, experimental, or historical, or document the best current practices (BCP) when implementing internet technologies.
+
+
+
+
+## Applications and services
+
+The Internet carries many applications and services, most prominently the **World Wide Web**, including social media, electronic mail, mobile applications, multiplayer online games, internet telephony, file sharing, and streaming media services.
+
+Most servers that provide these services are today hosted in **data centers**, and content is often accessed through high-performance **content delivery networks**.
+
+
+### World Wide Web
+
+The World Wide Web is a global collection of documents, images, multimedia, applications, and other resources, logically interrelated by hyperlinks and referenced with **Uniform Resource Identifiers** (URIs), which provide a global system of named references. URIs symbolically identify services, web servers, databases, and the documents and resources that they can provide. **Hypertext Transfer Protocol** (HTTP) is the main access protocol of the World Wide Web. Web services also use HTTP for communication between software systems for information transfer, sharing and exchanging business data and logistic and is one of many languages or protocols that can be used for communication on the Internet.
+
+World Wide Web browser software, such as Microsoft's Internet Explorer/Edge, Mozilla Firefox, Opera, Apple's Safari, and Google Chrome, lets users navigate from one web page to another via the hyperlinks embedded in the documents. These documents may also contain any combination of computer data, including graphics, sounds, text, video, multimedia and interactive content that runs while the user is interacting with the page. Client-side software can include animations, games, office applications and scientific demonstrations. Through keyword-driven internet research using search engines like Yahoo!, Bing and Google, users worldwide have easy, instant access to a vast and diverse amount of online information. Compared to printed media, books, encyclopedias and traditional libraries, the World Wide Web has enabled the decentralization of information on a large scale.
+
+The Web has enabled individuals and organizations to publish ideas and information to a potentially large audience online at greatly reduced expense and time delay. Publishing a web page, a blog, or building a website involves little initial cost and many cost-free services are available. However, publishing and maintaining large, professional web sites with attractive, diverse and up-to-date information is still a difficult and expensive proposition. Many individuals and some companies and groups use web logs or blogs, which are largely used as easily updatable online diaries. Some commercial organizations encourage staff to communicate advice in their areas of specialization in the hope that visitors will be impressed by the expert knowledge and free information, and be attracted to the corporation as a result.
+
+Advertising on popular web pages can be lucrative, and ecommerce, which is the sale of products and services directly via the web, continues to grow. Online advertising is a form of marketing and advertising which uses the internet to deliver promotional marketing messages to consumers. It includes email marketing, search engine marketing (SEM), social media marketing, many types of display advertising (including web banner advertising), and mobile advertising. In 2011, Internet advertising revenues in the United States surpassed those of cable television and nearly exceeded those of broadcast television. Many common online advertising practices are controversial and increasingly subject to regulation.
+
+When the web developed in the 1990s, a typical web page was stored in completed form on a web server, formatted in HTML, complete for transmission to a web browser in response to a request. Over time, the process of creating and serving web pages has become dynamic, creating a flexible design, layout, and content. Websites are often created using content management software with, initially, very little content. Contributors to these systems, who may be paid staff, members of an organization or the public, fill underlying databases with content using editing pages designed for that purpose while casual visitors view and read this content in HTML form. There may or may not be editorial, approval and security systems built into the process of taking newly entered content and making it available to the target visitors.
+
+
+### Communication
+
+Email is an important communications service available via the internet. The concept of sending electronic text messages between parties, analogous to mailing letters or memos, predates the creation of the internet. Pictures, documents, and other files are sent as email attachments. Email messages can be cc-ed to multiple email addresses.
+
+Internet telephony is a common communications service realized with the internet. The name of the principle internetworking protocol, the Internet Protocol, lends its name to **Voice over Internet Protocol** (VoIP). The idea began in the early 1990s with walkie-talkie-like voice applications for personal computers. VoIP systems now dominate many markets, and are as easy to use and as convenient as a traditional telephone. The benefit has been substantial cost savings over traditional telephone calls, especially over long distances. Cable, ADSL, and mobile data networks provide internet access in customer premises and inexpensive VoIP network adapters provide the connection for traditional analog telephone sets. The voice quality of VoIP often exceeds that of traditional calls. Remaining problems for VoIP include the situation that emergency services may not be universally available, and that devices rely on a local power supply, while older traditional phones are powered from the local loop, and typically operate during a power failure.
+
+
+### Data transfer
+
+File sharing is an example of transferring large amounts of data across the internet. A computer file can be emailed to customers, colleagues and friends as an attachment. It can be uploaded to a website or **File Transfer Protocol** (FTP) server for easy download by others. It can be put into a "shared location" or onto a file server for instant use by colleagues. The load of bulk downloads to many users can be eased by the use of "mirror" servers or peer-to-peer networks. In any of these cases, access to the file may be controlled by user **authentication**, the transit of the file over the internet may be obscured by **encryption**, and money may change hands for access to the file. The price can be paid by the remote charging of funds from, for example, a credit card whose details are also passed—usually fully encrypted—across the internet. The origin and authenticity of the file received may be checked by digital signatures or by MD5 or other message digests. These simple features of the internet, over a worldwide basis, are changing the production, sale, and distribution of anything that can be reduced to a computer file for transmission. This includes all manner of print publications, software products, news, music, film, video, photography, graphics and the other arts. This in turn has caused seismic shifts in each of the existing industries that previously controlled the production and distribution of these products.
+
+Streaming media is the real-time delivery of digital media for the immediate consumption or enjoyment by end users. Many radio and television broadcasters provide internet feeds of their live audio and video productions. They may also allow time-shift viewing or listening such as preview, classic clips and listen again features. These providers have been joined by a range of pure internet "broadcasters" who never had on-air licenses. This means that an internet connected device, such as a computer or something more specific, can be used to access online media in much the same way as was previously possible only with a television or radio receiver. The range of available types of content is much wider, from specialized technical webcasts to on-demand popular multimedia services. Podcasting is a variation on this theme, where — usually audio - material is downloaded and played back on a computer or shifted to a portable media player to be listened to on the move. These techniques using simple equipment allow anybody, with little censorship or licensing control, to broadcast audio/visual material worldwide.
+
+Digital media streaming increases the demand for network bandwidth. For example, standard image quality needs 1 Mbit/s link speed for SD 480p, HD 720p quality requires 2.5 Mbit/s, and the top-of-the-line HDX quality needs 4.5 Mbit/s for 1080p.
+
+Webcams are a low-cost extension of this phenomenon. While some webcams can give full-frame-rate video, the picture either is usually small or updates slowly. Internet users can watch animals around an African waterhole, ships in the Panama Canal, traffic at a local roundabout or monitor their own premises, live and in real time. Video chat rooms and video conferencing are also popular with many uses being found for personal webcams, with and without two-way sound. YouTube was founded on 15 February 2005 and is now the leading website for free streaming video with more than two billion users. It uses an HTML5 based web player by default to stream and show video files. Registered users may upload an unlimited amount of video and build their own personal profile. YouTube claims that its users watch hundreds of millions, and upload hundreds of thousands of videos daily.
