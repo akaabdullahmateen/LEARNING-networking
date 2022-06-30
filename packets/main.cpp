@@ -26,7 +26,7 @@ int main(int argc, char *argv[]){
     ipv4_header.display_blueprint();
     
     std::cout << std::endl;
-    std::cout << "IPv4 Header Data:" << std::endl;
+    std::cout << "IPv4 Header Analysis:" << std::endl;
     std::cout << std::endl;
     ipv4_header.display_header();
     
