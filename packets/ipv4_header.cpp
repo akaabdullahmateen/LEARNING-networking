@@ -9,7 +9,7 @@
 
 
 void Ipv4_header::initialize_header(){
-	header["version"]               = std::to_string(dump[0] >> 4);
+    header["version"]               = std::to_string(dump[0] >> 4);
     header["ihl"]                   = std::to_string((dump[0] & 0xf) * 4) + " bytes";
     header["dscp"]                  = get_dscp_keyword(dump[1] >> 2);
     header["ecn"]                   = get_ecn_keyword(dump[1] & 0x3);
@@ -41,6 +41,26 @@ void Ipv4_header::initialize_header(){
 
     header["source_address_class"] = "Class " + source_classful_network.get_address_class();
     header["destination_address_class"] = "Class " + destination_classful_network.get_address_class();
+
+    header["source_address_cidr"] = header["source_address"] + "/" + std::to_string(get_cidr(header["source_address_class"]));
+    header["destination_address_cidr"] = header["destination_address"] + "/" + std::to_string(get_cidr(header["destination_address_class"]));
+
+    header["source_address_subnet_mask"] = get_subnet_mask(header["source_address_class"]);
+    header["destination_address_subnet_mask"] = get_subnet_mask(header["destination_address_class"]);
+}
+
+std::string Ipv4_header::get_subnet_mask(const std::string &ipv4_address_class){
+    if(ipv4_address_class == "Class A") return "255.0.0.0";
+    if(ipv4_address_class == "Class B") return "255.255.0.0";
+    if(ipv4_address_class == "Class C") return "255.255.255.0";
+    else return "255.255.255.255";
+}
+
+unsigned int Ipv4_header::get_cidr(const std::string &ipv4_address_class){
+    if(ipv4_address_class == "Class A") return 8;
+    if(ipv4_address_class == "Class B") return 16;
+    if(ipv4_address_class == "Class C") return 24;
+    else return 0;
 }
 
 unsigned int Ipv4_header::calculate_checksum(){
@@ -113,37 +133,37 @@ std::string Ipv4_header::get_dscp_keyword(unsigned int n){
 }
 
 std::string Ipv4_header::get_ecn_keyword(unsigned int n){
-	if(n > 3) return "Undefined";
+    if(n > 3) return "Undefined";
     std::string keywords[] = {
         "Not ECN-Capable Transport",
         "ECN-Capable Transport(1)",
         "ECN-Capable Transport(0)",
         "Congestion Experienced"
-	};
+    };
     return keywords[n];
 }
 
 void Ipv4_header::default_initialize_dump(){
-	for(std::size_t i = 0; i < 60; ++i){
-		dump[i] = 0x00;
-	}
-	dump[9] = 0xff;
+    for(std::size_t i = 0; i < 60; ++i){
+        dump[i] = 0x00;
+    }
+    dump[9] = 0xff;
 }
 
 Ipv4_header::Ipv4_header(){
-	default_initialize_dump();
-	initialize_header();
+    default_initialize_dump();
+    initialize_header();
 }
 
 Ipv4_header::Ipv4_header(unsigned char *begin, unsigned char *end){
     if(end < begin + 20){
-    	default_initialize_dump();
+        default_initialize_dump();
     }
     else{
-   		std::size_t i = 0;
-   		while(begin != end){
-   		    dump[i++] = *begin++;
-   		}	
+        std::size_t i = 0;
+        while(begin != end){
+            dump[i++] = *begin++;
+        }   
     }
     initialize_header();
 }
@@ -193,24 +213,28 @@ void Ipv4_header::display_header(){
     std::cout << "\tHeader Checksum ........................ : " << header["checksum"] << std::endl;
     std::cout << "\t    Checksum Validation ................ : " << header["is_checksum_valid"] << std::endl;
     std::cout << "\tSource Address ......................... : " << header["source_address"] << std::endl;
-    std::cout << "\t    Source Address Class ............... : " << header["source_address_class"] << std::endl;
+    std::cout << "\t    Address Class ...................... : " << header["source_address_class"] << std::endl;
+    std::cout << "\t    Address CIDR ....................... : " << header["source_address_cidr"] << std::endl;
+    std::cout << "\t    Subnet Mask ........................ : " << header["source_address_subnet_mask"] << std::endl;
     std::cout << "\tDestination Address .................... : " << header["destination_address"] << std::endl;
-    std::cout << "\t    Destination Address Class .......... : " << header["destination_address_class"] << std::endl;
+    std::cout << "\t    Address Class ...................... : " << header["destination_address_class"] << std::endl;
+    std::cout << "\t    Address CIDR ....................... : " << header["destination_address_cidr"] << std::endl;
+    std::cout << "\t    Subnet Mask ........................ : " << header["destination_address_subnet_mask"] << std::endl;
 }
 
 void Ipv4_header::display_raw(){
-	bool is_last_newline = false;
-	std::size_t ihl = (dump[0] & 0xf) * 4;
-	for(size_t idx = 0; idx < ihl; ++idx){
-		std::bitset<8> dump_byte = dump[idx];
-		std::cout << "\t" << dump_byte.to_string();
-		if(!((idx + 1) % 4)){
-			std::cout << std::endl;
-			is_last_newline = true;
-		}
-		else is_last_newline = false;
-	}
-	if(!is_last_newline) std::cout << std::endl;
+    bool is_last_newline = false;
+    std::size_t ihl = (dump[0] & 0xf) * 4;
+    for(size_t idx = 0; idx < ihl; ++idx){
+        std::bitset<8> dump_byte = dump[idx];
+        std::cout << "\t" << dump_byte.to_string();
+        if(!((idx + 1) % 4)){
+            std::cout << std::endl;
+            is_last_newline = true;
+        }
+        else is_last_newline = false;
+    }
+    if(!is_last_newline) std::cout << std::endl;
 }
 
 std::map<std::string, std::string> Ipv4_header::get_header(){
